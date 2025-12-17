@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Social Media Optimization -->
+    <title>Protocolo Influence | Transforme Sua Comunicação</title>
+    <meta name="description" content="Domine a arte da influência e persuasão com a franquia de e-books Protocolo Influence. Técnicas avançadas de comunicação para resultados imediatos.">
+    <meta property="og:title" content="Protocolo Influence | Franquia de Elite">
+    <meta property="og:description" content="Descubra como dominar os primeiros 30 segundos de qualquer interação. Guia prático de engenharia social e linguagem corporal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=1200&auto=format&fit=crop">
+    <meta name="theme-color" content="#00FF88">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                green: '#00FF88',
+                turquoise: '#00E0CC',
+              },
+              dark: {
+                bg: '#050505',
+                card: '#0A0A0A',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon': '0 0 20px rgba(0, 255, 136, 0.4)',
+              'neon-hover': '0 0 30px rgba(0, 255, 136, 0.6)',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #050505;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .text-gradient {
+        background: linear-gradient(to right, #ffffff, #9ca3af);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* Loading Spinner for Suspense */
+      .loader {
+        border: 3px solid rgba(0, 255, 136, 0.1);
+        border-left-color: #00FF88;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      #error-display {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #990000;
+        color: white;
+        padding: 20px;
+        z-index: 9999;
+        font-family: monospace;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="error-display"></div>
+    <div id="root"></div>
+    
+    <!-- Global Error Handler: Shows errors on screen instead of blank page -->
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        var display = document.getElementById('error-display');
+        display.style.display = 'block';
+        display.innerHTML += '<strong>Error:</strong> ' + message + '<br>' +
+                             '<small>' + source + ':' + lineno + '</small><br><br>';
+        console.error(error);
+      };
+    </script>
+
+    <!-- Entry point for Vite build -->
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
